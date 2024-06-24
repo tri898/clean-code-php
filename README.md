@@ -1,4 +1,4 @@
-**Simple switch case**
+# Simple switch case
 
 Good
 ```
@@ -42,4 +42,30 @@ class Ulities
         return self::currency[$currentLanguage] ?? 'USD';
     }
 }
+```
+# If, else condition nested
+Not Good
+```
+<?php
+
+class Ulities
+{
+  public function getCurrency()
+  {
+    $currency = 'USD';
+        switch ($currentLanguage) {
+          case 'ko':
+            $currency = 'KRW';
+            break;
+            
+          case 'z-hant':
+            $currency = 'CNY';
+            break;
+    
+          case 'vn':
+            $currency = 'VND';
+            break;
+        }
+    return $currency;
+  }
 ```
