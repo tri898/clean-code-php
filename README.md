@@ -1,4 +1,5 @@
 **Simple switch case**
+
 Good
 ```
 public function getCurrency()
