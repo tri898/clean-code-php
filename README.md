@@ -1,7 +1,8 @@
-Simple switch case
+**Simple switch case**
 Good
 ```
-public function getCurrency() {
+public function getCurrency()
+{
   $currency = 'USD';
       switch ($currentLanguage) {
         case 'ko':
@@ -20,4 +21,20 @@ public function getCurrency() {
 }
 ```
 Better
+```
+<?php
 
+class Str
+{
+    private static $currency = [
+        'ko' => 'KRW',
+        'z-hant' => 'CNY',
+        'vn' => 'VND',
+    ];
+
+    public function getCurrency()
+    {
+        return self::currency[$currentLanguage] ?? 'USD';
+    }
+}
+```
