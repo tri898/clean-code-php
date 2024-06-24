@@ -1,5 +1,6 @@
 Simple switch case
 Good
+```
 public function getCurrency() {
   $currency = 'USD';
       switch ($currentLanguage) {
@@ -17,5 +18,6 @@ public function getCurrency() {
       }
       return $currency;
 }
+```
 Better
 
