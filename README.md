@@ -2,30 +2,34 @@
 
 Good
 ```
-public function getCurrency()
+<?php
+
+class Ulities
 {
-  $currency = 'USD';
-      switch ($currentLanguage) {
-        case 'ko':
-          $currency = 'KRW';
-          break;
-          
-        case 'z-hant':
-          $currency = 'CNY';
-          break;
-  
-        case 'vn':
-          $currency = 'VND';
-          break;
-      }
-      return $currency;
-}
+  public function getCurrency()
+  {
+    $currency = 'USD';
+        switch ($currentLanguage) {
+          case 'ko':
+            $currency = 'KRW';
+            break;
+            
+          case 'z-hant':
+            $currency = 'CNY';
+            break;
+    
+          case 'vn':
+            $currency = 'VND';
+            break;
+        }
+    return $currency;
+  }
 ```
 Better
 ```
 <?php
 
-class Str
+class Ulities
 {
     private static $currency = [
         'ko' => 'KRW',
