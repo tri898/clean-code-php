@@ -1,4 +1,4 @@
-# Simple switch case
+# Simple switch case or if else condition
 
 Good
 ```
@@ -6,10 +6,9 @@ Good
 
 class Ulities
 {
-  public function getCurrency()
+  public function getCurrency(string $language)
   {
-    $currency = 'USD';
-        switch ($currentLanguage) {
+        switch ($language) {
           case 'ko':
             $currency = 'KRW';
             break;
@@ -21,6 +20,9 @@ class Ulities
           case 'vn':
             $currency = 'VND';
             break;
+
+          default:
+            $currency = 'USD';
         }
     return $currency;
   }
@@ -37,13 +39,13 @@ class Ulities
         'vn' => 'VND',
     ];
 
-    public function getCurrency()
+    public function getCurrency($language)
     {
-        return self::currency[$currentLanguage] ?? 'USD';
+        return self::currency[$language] ?? 'USD';
     }
 }
 ```
-# If, else condition nested
+# Avoid If else condition nested
 Not Good
 ```
 <?php
@@ -69,3 +71,7 @@ class Ulities
     return $currency;
   }
 ```
+# Medthod name, variable có ý nghĩa
+
+# Áp dụng single responsibility
+
