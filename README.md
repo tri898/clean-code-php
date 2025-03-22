@@ -77,3 +77,5 @@ class Ulities
 
 
 # Áp dụng single responsibility
+
+# Phân biệt được thế nào là duplicate
