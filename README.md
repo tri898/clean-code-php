@@ -73,5 +73,7 @@ class Ulities
 ```
 # Medthod name, variable có ý nghĩa
 
-# Áp dụng single responsibility
+# Dùng trait hợp lý
 
+
+# Áp dụng single responsibility
